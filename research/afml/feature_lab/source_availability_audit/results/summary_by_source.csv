@@ -1,0 +1,7 @@
+﻿source,rows,bars,matched_event_ts,late_by_systime_msk,late_by_systime_utc,missing_systime,median_systime_minus_ts_sec,p95_systime_minus_ts_sec,max_systime_minus_ts_sec
+trades,1927099,4179,4179,0,0,4179,,,
+candles,20026,4179,4179,0,0,4179,,,
+orderbook,400,4179,0,0,0,4179,,,
+tradestats,4008,4179,4179,184,3536,0,10.0,15.0,9371.0
+obstats,3915,4179,4178,242,3508,1,14.0,20.0,9280.0
+orderstats,4042,4179,4179,239,3539,0,13.0,19.0,9703.0

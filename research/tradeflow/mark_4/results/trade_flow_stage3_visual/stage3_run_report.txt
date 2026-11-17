@@ -1,0 +1,17 @@
+JERICHON Trade Flow Stage 3 — run report
+================================================
+{'ticker': 'SMLT', 'sessions': 24, 'trades': 1516098, 'charts_written': 5, 'output': 'C:\\Users\\Сергей Кравцов\\Desktop\\Morgan Co\\JERICHON\\trade_flow_stage3_visual\\SMLT'}
+{'ticker': 'VTBR', 'sessions': 42, 'trades': 3704151, 'charts_written': 5, 'output': 'C:\\Users\\Сергей Кравцов\\Desktop\\Morgan Co\\JERICHON\\trade_flow_stage3_visual\\VTBR'}
+{'ticker': 'GAZP', 'sessions': 25, 'trades': 2269095, 'charts_written': 5, 'output': 'C:\\Users\\Сергей Кравцов\\Desktop\\Morgan Co\\JERICHON\\trade_flow_stage3_visual\\GAZP'}
+{'ticker': 'ROSN', 'sessions': 42, 'trades': 3004476, 'charts_written': 5, 'output': 'C:\\Users\\Сергей Кравцов\\Desktop\\Morgan Co\\JERICHON\\trade_flow_stage3_visual\\ROSN'}
+{'ticker': 'SBER', 'sessions': 42, 'trades': 5011186, 'charts_written': 5, 'output': 'C:\\Users\\Сергей Кравцов\\Desktop\\Morgan Co\\JERICHON\\trade_flow_stage3_visual\\SBER'}
+
+Interpretation guardrails:
+- Positive/negative TFI refers only to the encoded BUYSELL/sign field.
+- TFI is not OFI and BUYSELL is not asserted to be aggressor side.
+- Price is transaction price, not mid-price.
+- Absorption is a proxy, not confirmed order-book absorption.
+- Four regimes = |TFI volume| pressure × trade arrival intensity (trades/sec).
+- TFI count is shown separately as signed-count breadth/confirmation, not raw activity.
+- Regime thresholds are calculated per session; do not treat them as universal cutoffs.
+- Future returns are outcomes for visual diagnosis, never input features.

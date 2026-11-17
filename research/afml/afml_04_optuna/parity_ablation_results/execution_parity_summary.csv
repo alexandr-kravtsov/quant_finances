@@ -1,0 +1,2 @@
+ticker,events,events_with_next_open,missing_next_open_pct,median_abs_gap_bps,p95_abs_gap_bps,max_abs_gap_bps
+SMLT,1605,1605,0.0,0.0,16.38807652061902,108.51419031719489

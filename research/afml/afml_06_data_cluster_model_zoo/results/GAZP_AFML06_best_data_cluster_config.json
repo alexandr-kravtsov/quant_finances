@@ -1,0 +1,53 @@
+{
+  "ticker": "GAZP",
+  "notebook": "JERICHON_AFML_06_DataCluster_Optuna_ModelZoo",
+  "cache_version": "v1",
+  "seed": 63,
+  "n_trials": 75,
+  "best_objective": 0.5437167500894707,
+  "best_params": {
+    "dollar_threshold": 11000000.0,
+    "cusum_threshold": 0.0011334691025388678,
+    "pt_mult": 1.4,
+    "sl_mult": 0.8,
+    "vertical_horizon": 20,
+    "target_window": 75,
+    "scaler": "robust",
+    "pca_components": 8,
+    "dbscan_eps": 1.0783298861059847,
+    "dbscan_min_samples": 10
+  },
+  "best_mean_f1_macro_cluster": 0.5437167500894707,
+  "best_mean_f1_up_cluster": 0.39685411052834424,
+  "best_mean_f1_macro_baseline": 0.42294546802439864,
+  "best_mean_cluster_minus_baseline": 0.1207712820650721,
+  "best_mean_noise_train": 0.7130228180362562,
+  "best_mean_noise_val": 0.7715335223651923,
+  "best_mean_clusters": 14.333333333333334,
+  "folds": [
+    {
+      "name": "WF1",
+      "train_end_ts": "2026-10-09 12:39:53+00:00",
+      "val_start": "2026-10-09 12:42:04+00:00",
+      "val_end": "2026-10-19 04:26:07+00:00"
+    },
+    {
+      "name": "WF2",
+      "train_end_ts": "2026-10-19 04:26:07+00:00",
+      "val_start": "2026-10-19 04:27:51+00:00",
+      "val_end": "2026-10-20 16:53:45+00:00"
+    },
+    {
+      "name": "WF3",
+      "train_end_ts": "2026-10-20 16:53:45+00:00",
+      "val_start": "2026-10-20 16:54:48+00:00",
+      "val_end": "2026-10-27 08:48:56+00:00"
+    }
+  ],
+  "notes": [
+    "F1 metrics are predictive metrics, not profitability.",
+    "No final untouched holdout used in Optuna objective.",
+    "DBSCAN validation assignment uses nearest train core point within eps.",
+    "Scaler/PCA fit only on each training fold."
+  ]
+}

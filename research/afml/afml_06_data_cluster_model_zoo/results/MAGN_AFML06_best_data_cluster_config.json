@@ -1,0 +1,53 @@
+{
+  "ticker": "MAGN",
+  "notebook": "JERICHON_AFML_06_DataCluster_Optuna_ModelZoo",
+  "cache_version": "v1",
+  "seed": 63,
+  "n_trials": 150,
+  "best_objective": 0.5356958016317223,
+  "best_params": {
+    "dollar_threshold": 6000000.0,
+    "cusum_threshold": 0.00040206579426147544,
+    "pt_mult": 0.6,
+    "sl_mult": 1.0,
+    "vertical_horizon": 50,
+    "target_window": 75,
+    "scaler": "robust",
+    "pca_components": 12,
+    "dbscan_eps": 1.6452611436010633,
+    "dbscan_min_samples": 20
+  },
+  "best_mean_f1_macro_cluster": 0.5356958016317223,
+  "best_mean_f1_up_cluster": 0.6242792018595031,
+  "best_mean_f1_macro_baseline": 0.5024788985096319,
+  "best_mean_cluster_minus_baseline": 0.03321690312209036,
+  "best_mean_noise_train": 0.7421660873288044,
+  "best_mean_noise_val": 0.8910234442352342,
+  "best_mean_clusters": 14.0,
+  "folds": [
+    {
+      "name": "WF1",
+      "train_end_ts": "2026-09-22 14:55:46+00:00",
+      "val_start": "2026-09-22 14:57:36+00:00",
+      "val_end": "2026-10-02 09:54:26+00:00"
+    },
+    {
+      "name": "WF2",
+      "train_end_ts": "2026-10-02 09:54:26+00:00",
+      "val_start": "2026-10-02 10:05:31+00:00",
+      "val_end": "2026-10-13 08:53:04+00:00"
+    },
+    {
+      "name": "WF3",
+      "train_end_ts": "2026-10-13 08:53:04+00:00",
+      "val_start": "2026-10-13 08:53:29+00:00",
+      "val_end": "2026-10-27 08:55:30+00:00"
+    }
+  ],
+  "notes": [
+    "F1 metrics are predictive metrics, not profitability.",
+    "No final untouched holdout used in Optuna objective.",
+    "DBSCAN validation assignment uses nearest train core point within eps.",
+    "Scaler/PCA fit only on each training fold."
+  ]
+}

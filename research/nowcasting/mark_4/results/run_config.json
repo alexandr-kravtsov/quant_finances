@@ -1,0 +1,26 @@
+{
+  "tickers": [
+    "GAZP",
+    "SBER",
+    "VTBR",
+    "LKOH",
+    "SMLT"
+  ],
+  "start_date": "2026-06-01",
+  "end_date": "2026-11-03",
+  "thresholds": [
+    0.005,
+    0.01,
+    0.025
+  ],
+  "control_multiplier": 3,
+  "exclusion_radius_bars": 10,
+  "tod_bucket_minutes": 30,
+  "vol_lookback": 50,
+  "vol_bins": 5,
+  "feature_count": 474,
+  "rows": 79879,
+  "events": 3132,
+  "seed": 63,
+  "event_definition": "Directional change; feature snapshot at pivot; confirmation by subsequent counter-move"
+}

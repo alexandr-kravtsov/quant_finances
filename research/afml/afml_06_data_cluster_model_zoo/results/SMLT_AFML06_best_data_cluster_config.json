@@ -1,0 +1,53 @@
+{
+  "ticker": "SMLT",
+  "notebook": "JERICHON_AFML_06_DataCluster_Optuna_ModelZoo",
+  "cache_version": "v1",
+  "seed": 63,
+  "n_trials": 150,
+  "best_objective": 0.575894583839233,
+  "best_params": {
+    "dollar_threshold": 14000000.0,
+    "cusum_threshold": 0.0018887526548611044,
+    "pt_mult": 1.2000000000000002,
+    "sl_mult": 1.4,
+    "vertical_horizon": 30,
+    "target_window": 75,
+    "scaler": "robust",
+    "pca_components": 10,
+    "dbscan_eps": 3.040811566595819,
+    "dbscan_min_samples": 30
+  },
+  "best_mean_f1_macro_cluster": 0.575894583839233,
+  "best_mean_f1_up_cluster": 0.6543422315733237,
+  "best_mean_f1_macro_baseline": 0.48311944556497205,
+  "best_mean_cluster_minus_baseline": 0.09277513827426093,
+  "best_mean_noise_train": 0.6307336953897499,
+  "best_mean_noise_val": 0.7054750122145307,
+  "best_mean_clusters": 2.0,
+  "folds": [
+    {
+      "name": "WF1",
+      "train_end_ts": "2026-10-08 08:49:27+00:00",
+      "val_start": "2026-10-08 08:49:37+00:00",
+      "val_end": "2026-10-15 16:44:29+00:00"
+    },
+    {
+      "name": "WF2",
+      "train_end_ts": "2026-10-15 16:44:29+00:00",
+      "val_start": "2026-10-15 16:44:34+00:00",
+      "val_end": "2026-10-27 12:04:11+00:00"
+    },
+    {
+      "name": "WF3",
+      "train_end_ts": "2026-10-27 12:04:11+00:00",
+      "val_start": "2026-10-27 12:53:29+00:00",
+      "val_end": "2026-10-28 13:55:58+00:00"
+    }
+  ],
+  "notes": [
+    "F1 metrics are predictive metrics, not profitability.",
+    "No final untouched holdout used in Optuna objective.",
+    "DBSCAN validation assignment uses nearest train core point within eps.",
+    "Scaler/PCA fit only on each training fold."
+  ]
+}

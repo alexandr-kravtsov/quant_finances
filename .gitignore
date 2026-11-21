@@ -3,14 +3,7 @@
 # ==========================================
 data/for_ml/storage/
 archive/storage/
-
-# ==========================================
-# 2. РАЗРЕШАЕМ папку с сэмплами (Порядок важен!)
-# ==========================================
-!data/for_ml/storage/sample_storage/
-!data/for_ml/storage/sample_storage/**/*.parquet
-!data/for_ml/storage/sample_storage/**/*.csv
-!data/for_ml/storage/sample_storage/**/*.json
+data/
 
 # ==========================================
 # 3. РЕЗУЛЬТАТЫ ИССЛЕДОВАНИЙ (Тяжелые output-папки)
